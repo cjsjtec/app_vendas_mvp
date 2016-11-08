@@ -1,0 +1,23 @@
+<ion-view class='img-fundo' view-title="{{title}}" ng-controller="homeCtrl">
+
+  <ion-content>
+
+    <ion-slide-box slide-interval="95000" does-continue="true" auto-play="true">
+      <ion-slide ng-repeat="slide in slideImages">
+        <img src="{{slide.src}}" class="image-slide">
+      </ion-slide>
+    </ion-slide-box>
+
+
+    <div class="row">
+      <div class="col col-100 " ng-repeat="menuItem in appMenu">
+        <a  href="#/{{menuItem.id}}" class="btn-menu">
+          <img src="{{menuItem.icon}}" class="app-menu-icon">
+        </a>
+      </div>
+    </div>
+
+
+  </ion-content>
+
+</ion-view>

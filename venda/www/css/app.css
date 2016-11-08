@@ -1,0 +1,107 @@
+/*
+ * Please see the included README.md file for license terms and conditions.
+ */
+
+
+/* This file is completely optional and not required. */
+/* Note the reference that includes it in the index.html file. */
+
+
+/* Disable certain interactions on touch devices */
+/* SOURCE: https://github.com/ftlabs/fastclick/blob/master/examples/input.html */
+/* LICENSE: https://github.com/ftlabs/fastclick/blob/master/LICENSE */
+body {
+    -webkit-touch-callout: none ;
+    -webkit-text-size-adjust: none ; -ms-text-size-adjust: none ;
+    -webkit-user-select: none ; -moz-user-select: none ; -ms-user-select: none ; user-select: none ;
+    -webkit-highlight: none ;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) ;
+    -webkit-tap-highlight-color: transparent ;      /* For some Androids */
+}
+
+/* Recommended for Windows 8 Phone */
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+html {
+    -ms-touch-action: pan-x ;
+}
+
+/* Recommended for Windows 8 Phone */
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+body {
+    -ms-touch-action: pan-y ;
+    -ms-content-zooming: none ;
+}
+
+/* allow copy-paste */
+input, textarea  {
+    -webkit-user-select: text ; -moz-user-select: text ; -ms-user-select: text ; user-select: text ;
+}
+
+body {
+    /* margin: 0.5rem ; */
+    background: white ;
+    color: black ;
+}
+
+.align-center {
+    text-align: center ;
+}
+
+.image-slide {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.app-menu {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 95%;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+    transition: .2s;
+}
+
+.app-menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.app-menu-icon {
+    line-height: 60px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 38px;
+    height: 38px;
+}
+
+.btn-menu {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+
+    /*border-radius: 50%;*/
+    background-color: #eee;
+    background: linear-gradient(to bottom, #e5e5e5, #f0f0f0);
+    box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.25),
+                0 1px 2px 0 rgba(0,0,0,0.2);
+
+    transition: .2s ease;
+}
+
+.btn-menu:active {
+    background: linear-gradient(to bottom, #333, #555);
+    box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.25),
+                0 1px 2px 0 rgba(0,0,0,0.2),
+                0 4px 7px 0 rgba(0,0,0,0.3);
+}
